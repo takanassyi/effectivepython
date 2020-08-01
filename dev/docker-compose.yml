@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    container_name: py-effective-dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+        - .:/workspace
